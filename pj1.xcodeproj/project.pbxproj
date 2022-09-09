@@ -16,6 +16,8 @@
 		C4CC6C9028CB1618007D4146 /* pj1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C8F28CB1618007D4146 /* pj1Tests.swift */; };
 		C4CC6C9A28CB1618007D4146 /* pj1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C9928CB1618007D4146 /* pj1UITests.swift */; };
 		C4CC6C9C28CB1618007D4146 /* pj1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C9B28CB1618007D4146 /* pj1UITestsLaunchTests.swift */; };
+		C4CC6CAA28CB1A77007D4146 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C4CC6CA928CB1A77007D4146 /* Lottie */; };
+		C4CC6CAC28CB22E5007D4146 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = C4CC6CAB28CB22E5007D4146 /* example.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		C4CC6C9528CB1618007D4146 /* pj1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pj1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CC6C9928CB1618007D4146 /* pj1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pj1UITests.swift; sourceTree = "<group>"; };
 		C4CC6C9B28CB1618007D4146 /* pj1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pj1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4CC6CAB28CB22E5007D4146 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = example.json; path = ../../../../Downloads/example.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CC6CAA28CB1A77007D4146 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 				C4CC6C7C28CB1615007D4146 /* ViewController.swift */,
 				C4CC6C7E28CB1615007D4146 /* Main.storyboard */,
 				C4CC6C8128CB1618007D4146 /* Assets.xcassets */,
+				C4CC6CAB28CB22E5007D4146 /* example.json */,
 				C4CC6C8328CB1618007D4146 /* LaunchScreen.storyboard */,
 				C4CC6C8628CB1618007D4146 /* Info.plist */,
 			);
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = pj1;
+			packageProductDependencies = (
+				C4CC6CA928CB1A77007D4146 /* Lottie */,
+			);
 			productName = pj1;
 			productReference = C4CC6C7528CB1615007D4146 /* pj1.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = C4CC6C6C28CB1615007D4146;
+			packageReferences = (
+				C4CC6CA828CB1A77007D4146 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = C4CC6C7628CB1615007D4146 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CC6CAC28CB22E5007D4146 /* example.json in Resources */,
 				C4CC6C8528CB1618007D4146 /* LaunchScreen.storyboard in Resources */,
 				C4CC6C8228CB1618007D4146 /* Assets.xcassets in Resources */,
 				C4CC6C8028CB1615007D4146 /* Main.storyboard in Resources */,
@@ -602,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4CC6CA828CB1A77007D4146 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4CC6CA928CB1A77007D4146 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4CC6CA828CB1A77007D4146 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4CC6C6D28CB1615007D4146 /* Project object */;
 }
