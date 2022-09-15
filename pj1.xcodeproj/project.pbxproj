@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904BE9A3507D0429DE8A2506 /* libPods-pj1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C6E9FF7E0A46D10778A87 /* libPods-pj1.a */; };
 		C4CC6C7928CB1615007D4146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C7828CB1615007D4146 /* AppDelegate.swift */; };
 		C4CC6C7B28CB1615007D4146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C7A28CB1615007D4146 /* SceneDelegate.swift */; };
 		C4CC6C7D28CB1615007D4146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C7C28CB1615007D4146 /* ViewController.swift */; };
@@ -18,6 +19,8 @@
 		C4CC6C9C28CB1618007D4146 /* pj1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC6C9B28CB1618007D4146 /* pj1UITestsLaunchTests.swift */; };
 		C4CC6CAA28CB1A77007D4146 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C4CC6CA928CB1A77007D4146 /* Lottie */; };
 		C4CC6CAC28CB22E5007D4146 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = C4CC6CAB28CB22E5007D4146 /* example.json */; };
+		C4EF088E28D2F1F0002C89A4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C4EF088D28D2F1F0002C89A4 /* SnapKit */; };
+		C4EF089028D2F1F0002C89A4 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C4EF088F28D2F1F0002C89A4 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2547CD64BF6D925498562409 /* Pods-pj1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pj1.release.xcconfig"; path = "Target Support Files/Pods-pj1/Pods-pj1.release.xcconfig"; sourceTree = "<group>"; };
+		B76249D943163BCE03CBCA8F /* Pods-pj1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pj1.debug.xcconfig"; path = "Target Support Files/Pods-pj1/Pods-pj1.debug.xcconfig"; sourceTree = "<group>"; };
 		C4CC6C7528CB1615007D4146 /* pj1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pj1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CC6C7828CB1615007D4146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CC6C7A28CB1615007D4146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		C4CC6C9928CB1618007D4146 /* pj1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pj1UITests.swift; sourceTree = "<group>"; };
 		C4CC6C9B28CB1618007D4146 /* pj1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pj1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4CC6CAB28CB22E5007D4146 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = example.json; path = ../../../../Downloads/example.json; sourceTree = "<group>"; };
+		FA1C6E9FF7E0A46D10778A87 /* libPods-pj1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pj1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EF088E28D2F1F0002C89A4 /* SnapKit in Frameworks */,
 				C4CC6CAA28CB1A77007D4146 /* Lottie in Frameworks */,
+				904BE9A3507D0429DE8A2506 /* libPods-pj1.a in Frameworks */,
+				C4EF089028D2F1F0002C89A4 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8208C11B664B3E00ECE6BFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B76249D943163BCE03CBCA8F /* Pods-pj1.debug.xcconfig */,
+				2547CD64BF6D925498562409 /* Pods-pj1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4CC6C6C28CB1615007D4146 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +105,8 @@
 				C4CC6C8E28CB1618007D4146 /* pj1Tests */,
 				C4CC6C9828CB1618007D4146 /* pj1UITests */,
 				C4CC6C7628CB1615007D4146 /* Products */,
+				B8208C11B664B3E00ECE6BFF /* Pods */,
+				EE8CA8DADBC47BFF7D668E93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +152,14 @@
 			path = pj1UITests;
 			sourceTree = "<group>";
 		};
+		EE8CA8DADBC47BFF7D668E93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C6E9FF7E0A46D10778A87 /* libPods-pj1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4CC6C9F28CB1618007D4146 /* Build configuration list for PBXNativeTarget "pj1" */;
 			buildPhases = (
+				A970FEEFF8F09BDDBA201817 /* [CP] Check Pods Manifest.lock */,
 				C4CC6C7128CB1615007D4146 /* Sources */,
 				C4CC6C7228CB1615007D4146 /* Frameworks */,
 				C4CC6C7328CB1615007D4146 /* Resources */,
@@ -150,6 +179,8 @@
 			name = pj1;
 			packageProductDependencies = (
 				C4CC6CA928CB1A77007D4146 /* Lottie */,
+				C4EF088D28D2F1F0002C89A4 /* SnapKit */,
+				C4EF088F28D2F1F0002C89A4 /* SnapKit-Dynamic */,
 			);
 			productName = pj1;
 			productReference = C4CC6C7528CB1615007D4146 /* pj1.app */;
@@ -225,6 +256,7 @@
 			mainGroup = C4CC6C6C28CB1615007D4146;
 			packageReferences = (
 				C4CC6CA828CB1A77007D4146 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C4EF088C28D2F1F0002C89A4 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = C4CC6C7628CB1615007D4146 /* Products */;
 			projectDirPath = "";
@@ -264,6 +296,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A970FEEFF8F09BDDBA201817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pj1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4CC6C7128CB1615007D4146 /* Sources */ = {
@@ -444,6 +501,7 @@
 		};
 		C4CC6CA028CB1618007D4146 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76249D943163BCE03CBCA8F /* Pods-pj1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +530,7 @@
 		};
 		C4CC6CA128CB1618007D4146 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2547CD64BF6D925498562409 /* Pods-pj1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,6 +683,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		C4EF088C28D2F1F0002C89A4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -631,6 +698,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C4CC6CA828CB1A77007D4146 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		C4EF088D28D2F1F0002C89A4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4EF088C28D2F1F0002C89A4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C4EF088F28D2F1F0002C89A4 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4EF088C28D2F1F0002C89A4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
